@@ -2,7 +2,6 @@ import React from 'react';
 import { cx, css } from '@emotion/css';
 
 import { ToastContainerProps, Placement } from './types';
-import { gutter } from './Toast';
 
 const placements: Record<Placement, React.CSSProperties> = {
   'top-left': { top: 0, left: 0 },
@@ -23,7 +22,7 @@ export function ToastContainer(props: ToastContainerProps) {
           maxHeight: '100%',
           maxWidth: '100%',
           overflow: 'hidden',
-          padding: gutter,
+          padding: 8,
           pointerEvents: props.hasToasts ? undefined : 'none',
           position: 'fixed',
           zIndex: 1000,

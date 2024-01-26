@@ -6,3 +6,4 @@ export {
   withToastManager,
   useToasts,
 } from './ToastProvider';
+export * from './types';

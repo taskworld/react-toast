@@ -3,7 +3,8 @@ pre-commit:
   commands:
     prettier:
       glob: "*.{js,ts,jsx,tsx}"
-      run: yarn prettier --write {staged_files} && git add {staged_files}
+      run: pnpm prettier --write {staged_files}
+      stage_fixed: true
     tsc:
       glob: "*.{ts,tsx}"
-      run: yarn tsc
+      run: pnpm tsc

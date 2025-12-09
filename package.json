@@ -22,20 +22,20 @@
   ],
   "scripts": {},
   "devDependencies": {
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "@types/react-transition-group": "^4.4.10",
-    "lefthook": "^1.6.1",
-    "prettier": "^3.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^5.3.3"
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@types/react-transition-group": "^4.4.12",
+    "lefthook": "^2.0.9",
+    "prettier": "^3.7.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@emotion/css": "^11.11.2",
+    "@emotion/css": "^11.13.5",
     "react-transition-group": "^4.4.5"
   },
   "prettier": {

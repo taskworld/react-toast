@@ -17,18 +17,20 @@ export function ToastContainer(props: ToastContainerProps) {
     <div
       className={cx(
         'react-toast-notifications__container',
-        css({
-          boxSizing: 'border-box',
-          maxHeight: '100%',
-          maxWidth: '100%',
-          overflow: 'hidden',
-          padding: 8,
-          pointerEvents: props.hasToasts ? undefined : 'none',
-          position: 'fixed',
-          zIndex: 1000,
-          ...placements[props.placement],
-        })
+        css`
+          box-sizing: border-box;
+          max-height: 100%;
+          max-width: 100%;
+          overflow: hidden;
+          padding: 8px;
+          position: fixed;
+          z-index: 1000;
+        `
       )}
+      style={{
+        pointerEvents: props.hasToasts ? undefined : 'none',
+        ...placements[props.placement],
+      }}
     >
       {props.children}
     </div>
